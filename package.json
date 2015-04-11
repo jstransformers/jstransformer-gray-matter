@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-gray-matter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "`gray-matter` support for JS Transformers. Front matter parser used by assemble and metalsmith. Simple to use, and battle tested.",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
