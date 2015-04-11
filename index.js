@@ -10,8 +10,14 @@
 var matter = require('gray-matter');
 
 exports.name = 'gray-matter';
-exports.outputFormat = 'html';
+exports.inputFormats = ['hbs', 'lodash', 'mustache', 'html', 'txt'];
+exports.outputFormat = 'json';
 
-exports.compile = function _compile(str, opts) {
-  // body
+exports.render = function _render(str, options) {
+  var result = matter(str, options);
+  return JSON.stringify(result);
+};
+exports.renderFile = function _renderFile(filepath, options) {
+  var result = matter.read(filepath, options);
+  return JSON.stringify(result);
 };

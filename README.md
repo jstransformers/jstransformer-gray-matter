@@ -14,6 +14,14 @@ npm test
 
 ```js
 var matter = require('jstransformer')(require('jstransformer-gray-matter'));
+var options = {
+  delims: ['~~~', '~~~']
+};
+
+var res = matter.render('~~~\ntitle: foo\n~~~\nbar', options);
+
+console.log(JSON.parse(res.body));
+//=> {data: {title: 'foo'}, content: 'bar', orig: '~~~\ntitle: foo\n~~~\nbar'};
 ```
 
 
