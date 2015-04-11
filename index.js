@@ -8,3 +8,10 @@
 'use strict';
 
 var matter = require('gray-matter');
+
+exports.name = 'gray-matter';
+exports.outputFormat = 'html';
+
+exports.compile = function _compile(str, opts) {
+  // body
+};

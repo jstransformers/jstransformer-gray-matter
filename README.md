@@ -24,8 +24,6 @@ var matter = require('jstransformer')(require('jstransformer-gray-matter'));
 - [jstransformer-rework](https://github.com/jstransformers/jstransformer-rework): ReworkCSS support for JS Transformers. CSS to CSS transformation.
 - [jstransformer-postcss](https://github.com/jstransformers/jstransformer-postcss): PostCSS support for JS Transformers. CSS to CSS transformation.
 - [jstransformer-underscore](https://github.com/jstransformers/jstransformer-underscore): Compile and render underscore templates
-- [jstransformer-rework](https://github.com/jstransformers/jstransformer-rework): ReworkCSS support for JS Transformers. CSS to CSS transformation.
-- [jstransformer-postcss](https://github.com/jstransformers/jstransformer-postcss): PostCSS support for JS Transformers. CSS to CSS transformation.
 
 
 ## License [![MIT license][license-img]][license-url]
