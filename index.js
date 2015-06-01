@@ -1,23 +1,15 @@
-/**
- * jstransformer-gray-matter <https://github.com/jstransformers/jstransformer-gray-matter>
- *
- * Copyright (c) 2015 Charlike Mike Reagent, contributors.
- * Released under the MIT license.
- */
-
 'use strict';
 
 var matter = require('gray-matter');
 
 exports.name = 'gray-matter';
-exports.inputFormats = ['hbs', 'lodash', 'mustache', 'html', 'txt'];
 exports.outputFormat = 'json';
 
 exports.render = function _render(str, options) {
   var result = matter(str, options);
   return JSON.stringify(result);
 };
-exports.renderFile = function _renderFile(filepath, options) {
-  var result = matter.read(filepath, options);
-  return JSON.stringify(result);
-};
+
+// Note: exports.renderFile() is not implemented as matter.read() is simply a
+// wrapper around matter(str, options). JSTransformer will handle this
+// implementation for us.
