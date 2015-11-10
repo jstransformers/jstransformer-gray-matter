@@ -10,7 +10,6 @@
 var matter = require('gray-matter');
 
 exports.name = 'gray-matter';
-exports.inputFormats = ['hbs', 'lodash', 'mustache', 'html', 'txt'];
 exports.outputFormat = 'json';
 
 exports.render = function _render(str, options) {
