@@ -34,7 +34,7 @@
     "url": "https://github.com/jstransformers/jstransformer-gray-matter/blob/master/LICENSE.md"
   },
   "dependencies": {
-    "gray-matter": "~2.0.0"
+    "gray-matter": "~2.1.0"
   },
   "devDependencies": {
     "assertit": "^0.1.0",
