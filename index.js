@@ -16,7 +16,3 @@ exports.render = function _render(str, options) {
   var result = matter(str, options);
   return JSON.stringify(result);
 };
-exports.renderFile = function _renderFile(filepath, options) {
-  var result = matter.read(filepath, options);
-  return JSON.stringify(result);
-};

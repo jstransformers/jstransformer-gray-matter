@@ -1,44 +1,36 @@
 {
   "name": "jstransformer-gray-matter",
   "version": "0.1.0",
-  "description": "`gray-matter` support for JS Transformers. Front matter parser used by assemble and metalsmith. Simple to use, and battle tested.",
-  "scripts": {
-    "lint": "jshint index.js && jscs index.js --reporter inline",
-    "test": "node test",
-    "test-cov": "istanbul cover test",
-    "test-travis": "istanbul cover test --report lcovonly"
-  },
-  "author": {
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "https://github.com/tunnckoCore"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jstransformers/jstransformer-gray-matter.git"
-  },
+  "description": "Gray Matter support for JSTransformers.",
   "keywords": [
-    "data",
-    "engine",
-    "front",
     "frontmatter",
     "gray",
-    "jstranformer",
     "matter",
-    "modular",
-    "template",
-    "trasfrom"
+    "jstranformer"
   ],
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jstransformers/jstransformer-gray-matter/blob/master/LICENSE.md"
-  },
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "gray-matter": "~2.1.0"
   },
   "devDependencies": {
-    "assertit": "^0.1.0",
-    "istanbul-harmony": "~0.3.1",
-    "jstransformer": "~1.0.0"
-  }
+    "test-jstransformer": "^1.0.0"
+  },
+  "scripts": {
+    "coverage": "test-jstransformer coverage",
+    "test": "test-jstransformer"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jstransformers/jstransformer-gray-matter.git"
+  },
+  "author": {
+    "name": "JSTransformers Team",
+    "url": "http://github.com/orgs/jstransformers/people"
+  },
+  "license": "MIT"
 }
