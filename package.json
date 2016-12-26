@@ -1,19 +1,16 @@
 {
+  "dependencies": {
+    "gray-matter": "~2.1.0"
+  },
   "name": "jstransformer-gray-matter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Gray Matter support for JSTransformers.",
   "keywords": [
-    "frontmatter",
-    "gray",
-    "matter",
-    "jstranformer"
+    "jstransformer"
   ],
   "files": [
     "index.js"
   ],
-  "dependencies": {
-    "gray-matter": "~2.1.0"
-  },
   "devDependencies": {
     "test-jstransformer": "^1.0.0",
     "xo": "^0.17.1"
