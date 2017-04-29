@@ -1,5 +1,7 @@
 # jstransformer-gray-matter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-gray-matter.svg)](https://greenkeeper.io/)
+
 [Gray Matter](https://github.com/jonschlinkert/gray-matter) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-gray-matter/master.svg)](https://travis-ci.org/jstransformers/jstransformer-gray-matter)
