@@ -15,15 +15,15 @@
 ## API
 
 ```js
-var matter = require('jstransformer')(require('jstransformer-gray-matter'));
+var matter = require('jstransformer')(require('jstransformer-gray-matter'))
 var options = {
   delims: ['~~~', '~~~']
-};
+}
 
-var res = matter.render('~~~\ntitle: gray-matter\n~~~\nbar', options);
+var res = matter.render('~~~\ntitle: gray-matter\n~~~\nbar', options)
 
-console.log(JSON.parse(res.body));
-//=> {data: {title: 'gray-matter'}, content: 'bar', orig: '~~~\ntitle: gray-matter\n~~~\nbar'};
+console.log(JSON.parse(res.body))
+//=> {data: {title: 'gray-matter'}, content: 'bar', orig: '~~~\ntitle: gray-matter\n~~~\nbar'}
 ```
 
 ## License
